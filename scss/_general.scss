@@ -1,0 +1,30 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+
+  font-family: 'Ubuntu', sans-serif;
+  background-color: $add-color;
+  margin: 0;
+  .second-word{
+    color: $add-yellow-color;
+  }
+  .animation{
+    transition: all 1s;
+  }
+  .sections{
+    text-align: center;
+    overflow: auto;
+    padding: 100px 50px 150px 50px;
+    .col-1-2{
+      margin: 0;
+      width: 50%;
+      float: left;
+      text-align: center;
+    }
+  }
+}

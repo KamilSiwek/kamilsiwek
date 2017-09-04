@@ -1,0 +1,164 @@
+@import "variables";
+
+#portfolio{
+  #portfolio-header{
+
+  }
+  #portfolio-main{
+    display: inline-block;
+    text-align: center;
+
+    perspective: 1200px;
+    width: 100%;
+    height: 250px;
+    box-shadow: inset 0px 0px 23px 6px rgba(0,0,0,0.75);
+    //margin: 0;
+    #carousel{
+      //transform: rotateX(-10deg);
+      display: inline-block;
+      position: relative;
+      //overflow: auto;
+      text-align: center;
+      transform-style:preserve-3d;
+    //  animation: obrot 10s linear infinite;
+      .portfolio-items{
+        position: absolute;
+        display: inline-block;
+        height: 200px;
+        width: 300px;
+        border: 1px solid $main-color;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+      //  transform: translateX(-50%);
+      }
+
+      // :nth-child(3){
+      //   height: 120px;
+      //   width: 180px;
+      // }
+
+
+      // :nth-child(1){
+      //   //transform: rotateY(0) translateZ(469px);
+      //   // transform: translate(0, 150px, 469px);
+      //   background-image: url(../img/kociolek.png);
+      //   transform: translate3d(-50%,0,100px);
+      //   animation: przesuniecie1 3s linear 1;
+      // }
+      // :nth-child(2){
+      //   // transform: translate(0, 150px, 469px);
+      //   //transform: rotateY(120deg) translateZ(469px);
+      //   background-image: url(../img/zrzut1.png);
+      //   transform: translate3d(50%,0, 0px);
+      //   animation: przesuniecie2 3s linear 1;
+      // }
+      // :nth-child(3){
+      //   // transform: translate(0, -300px, 469px);
+      //   //transform: rotateY(240deg) translateZ(469px);
+      //   background-image: url(../img/zrzut2.png);
+      //   transform:  translate3d(-150%,0,0px);
+      //   animation: przesuniecie3 3s linear 1;
+      // }
+      // :nth-child(4){
+      //   // transform: translate(0, -300px, 469px);
+      //   //transform: rotateY(240deg) translateZ(469px);
+      //   background-image: url(../img/zrzut3.png);
+      //   transform:  translate3d(-150%,0,0px);
+      // }
+
+
+      .portfolio-item1{
+        //transform: rotateY(0) translateZ(469px);
+        // transform: translate(0, 150px, 469px);
+        background-image: url(../img/kociolek.png);
+        transform: translate3d(-50%,0,100px);
+        //animation: przesuniecie1 3s linear 1;
+      }
+      .portfolio-item2{
+        // transform: translate(0, 150px, 469px);
+        //transform: rotateY(120deg) translateZ(469px);
+        background-image: url(../img/tenis.png);
+        transform: translate3d(50%,0, 0px);
+        //animation: przesuniecie2 3s linear 1;
+      }
+      .portfolio-item3{
+        // transform: translate(0, -300px, 469px);
+        //transform: rotateY(240deg) translateZ(469px);
+        background-image: url(../img/arkanoid.png);
+        transform:  translate3d(-150%,0,0px);
+        //animation: przesuniecie3 3s linear 1;
+      }
+      // .go1{
+      //   animation: przesuniecie1 6s linear 1;
+      // }
+      // .go1:hover{
+      //   //animation-play-state: paused;
+      // }
+      // .go2{
+      //   animation: przesuniecie2 6s linear 1;
+      // }
+      // .go2:hover{
+      // //  animation-play-state: paused;
+      // }
+      // .go3{
+      //   animation: przesuniecie3 6s linear 1;
+      // }
+      // .go3:hover{
+      // //  animation-play-state: paused;
+      // }
+      //
+      // @keyframes obrot{
+      //   from{
+      //     transform: rotateY(0);
+      //   }
+      //   to{
+      //     transform: rotateY(360deg);
+      //   }
+      // }
+      // @keyframes przesuniecie1{
+      //   0%{
+      //     transform: translate3d(-50%,0,100px);
+      //   }
+      //   33%{
+      //     transform: translate3d(50%,0, 0px);
+      //   }
+      //   66%{
+      //     transform:  translate3d(-150%,0,0px);
+      //   }
+      //   100%{
+      //     transform: translate3d(-50%,0,100px);
+      //   }
+      // }
+      // @keyframes przesuniecie2{
+      //   0%{
+      //     transform: translate3d(50%,0, 0px);
+      //   }
+      //   33%{
+      //     transform:  translate3d(-150%,0,0px);
+      //   }
+      //   66%{
+      //     transform: translate3d(-50%,0,100px);
+      //   }
+      //   100%{
+      //     transform: translate3d(50%,0, 0px);
+      //   }
+      // }
+      // @keyframes przesuniecie3{
+      //   0%{
+      //     transform:  translate3d(-150%,0,0px);
+      //   }
+      //   33%{
+      //     transform: translate3d(-50%,0,100px);
+      //   }
+      //   66%{
+      //     transform: translate3d(50%,0, 0px);
+      //   }
+      //   100%{
+      //     transform:  translate3d(-150%,0,0px);
+      //   }
+      }
+    }
+
+}

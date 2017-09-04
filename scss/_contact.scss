@@ -1,0 +1,105 @@
+@import "variables";
+#contact{
+  padding-top: 20px;
+  padding-bottom: 50px;
+  color: $add-color;
+  background-color: $add-blue-color;
+  box-shadow: 0px 0px 23px 6px rgba(0,0,0,0.75);
+  #contact-header{
+    padding-bottom: 40px;
+    h2 {
+      color: $add-yellow-color;
+    }
+    }
+  #contact-main{
+
+    #contact-date{
+      text-align: left;
+
+      #contact-name{
+        margin-top: 0;
+      }
+      #contact-adress{
+        a{
+          text-decoration: none;
+          color: $add-color;
+        }
+        a:hover{
+          color:$add-yellow-color;
+        }
+      }
+    }
+    #contact-form{
+      text-align: right;
+      #form{
+        .text-area{
+          width: 100%;
+          margin-bottom: 10px;
+          padding: 5px;
+        }
+        #message{
+          width: 100%;
+          height: 6em;
+        }
+        #contact-submit{
+          width: 20%;
+          height: 2em;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+  #contact-main{
+
+    #contact-date{
+      text-align: left;
+
+      #contact-name{
+        margin-top: 0;
+      }
+      #contact-adress{
+      }
+    }
+    #contact-form{
+      text-align: right;
+      #form{
+        .text-area{
+          width: 100%;
+          margin-bottom: 10px;
+          padding: 5px;
+          border-radius: 3px;
+          border: none;
+          outline: none;
+          background-color: $add-color;
+          color: $main-color;
+        }
+        .text-area:focus{
+        //  border: 1px solid red;
+        background-color: white;
+        box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+        }
+        #message{
+          width: 100%;
+          height: 6em;
+        }
+        #contact-submit{
+          font-family: 'Ubuntu', sans-serif;
+          font-size: 20px;
+          width: 20%;
+          min-width: 70px;
+          height: 2em;
+          display: inline-block;
+          background-color: $main-color;
+          color: $add-yellow-color;
+          border: none;
+          border-radius: 3px;
+          cursor: pointer;
+        //  transition-duration: 1s;
+        }
+        #contact-submit:hover{
+          box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+        }
+      }
+    }
+  }

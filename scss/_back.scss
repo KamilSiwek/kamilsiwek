@@ -1,0 +1,30 @@
+@import "variables";
+.after-back{
+  display: none;
+  cursor: pointer;
+}
+.after-back:focus{
+  outline: none;
+}
+.back{
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  position: fixed;
+  z-index: 15;
+  right: 50px;
+  bottom: 50px;
+  border: 2px solid $add-yellow-color-trans;
+  border-radius: 15%;
+  i{
+    color: $add-yellow-color-trans;
+    font-size: 30px;
+  }
+  i:hover{
+    color: $add-yellow-color;
+  }
+}
+.back:hover{
+  border-color: $add-yellow-color;
+}

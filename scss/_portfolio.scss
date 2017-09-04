@@ -1,0 +1,109 @@
+@import "variables";
+//@media (max-width: 768px) {
+#portfolio{
+  color: $add-blue-color;
+
+
+  #portfolio-main{
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+    #carousel{
+      position: absolute;
+      height: 100%;
+      .portfolio-items{
+        position: absolute;
+        // top: 0;
+        // bottom: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        min-height: 100%;
+        .portfolio-mask{
+          height: 100%;
+          width: 100%;
+          background-color: $add-blue-color-trans;
+          position: absolute;
+          opacity: 0;
+          transition: all .5s ;
+          .portfolio-content-outer{
+            width: 95%;
+            height: 95%;
+            border: 2px solid $add-color;
+            left: 0;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: auto;
+            position: relative;
+            .portfolio-content-inner{
+              color: $add-color;
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 100%;
+              a{
+                color: $add-color;
+                font-size: 50px;
+                i{
+
+                }
+              }
+              a:hover{
+                color: $add-yellow-color;
+
+              }
+            }
+          }
+        }
+        .portfolio-mask:hover{
+          opacity: 1;
+        }
+        img{
+          width: 100%;
+          min-height: 100%;
+        }
+      }
+      #portfolio-item1{
+        background-image: url(../img/tenis.png);
+      }
+      #portfolio-item2{
+        background-image: url(../img/arkanoid.png);
+      }
+      #portfolio-item3{
+        background-image: url(../img/kociolek.png);
+      }
+    }
+    .slider-arrows{
+      .prev-slide{
+        position: absolute;
+        left:0;
+        z-index: 10;
+      }
+      a{
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 3em;
+
+        i{
+          color: $add-blue-color;
+        }
+        i:hover{
+          color: $add-yellow-color;
+        }
+      }
+      .next-slide{
+        position: absolute;
+        right:0;
+        z-index: 10;
+      }
+      a{
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 3em;
+        color: white;
+      }
+    }
+  }
+}

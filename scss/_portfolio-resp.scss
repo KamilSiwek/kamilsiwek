@@ -1,0 +1,41 @@
+@import "variables";
+@media (max-width: 768px) {
+#portfolio{
+  padding-left: 0px;
+  padding-right: 0px;
+
+
+  #portfolio-main{
+
+    #carousel{
+
+      .portfolio-items{
+        .portfolio-mask{
+          opacity: 1;
+        }
+      }
+    }
+    .slider-arrows{
+      .prev-slide{
+
+      }
+      a{
+
+
+        i{
+          color: $add-yellow-color-trans;
+        }
+        i:hover{
+
+        }
+      }
+      .next-slide{
+
+      }
+      a{
+
+      }
+    }
+  }
+}
+}

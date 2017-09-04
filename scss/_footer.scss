@@ -1,0 +1,28 @@
+@import "variables";
+
+#footer{
+  background-color: $main-color;
+  //height: 40px;
+  text-align: center;
+  #social-box{
+    display: inline-block;
+    padding: 15px;
+
+    a{
+      color: white;
+      font-size: 30px;
+      i{
+        padding: 7px 13px;
+        border: 1px solid white;
+        border-radius: 50%;
+      }
+    }
+    a:hover{
+      color: $add-yellow-color;
+
+    }
+    i:hover{
+      border-color: $add-yellow-color;
+    }
+  }
+}

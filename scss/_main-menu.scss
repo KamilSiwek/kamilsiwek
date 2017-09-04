@@ -1,0 +1,42 @@
+@import "variables";
+
+.main-menu {
+  z-index: 10;
+  position: fixed;
+  background-color: $main-color-trans;
+  width: 100%;
+  color: $add-color;
+  .name-out {
+    float: left;
+  }
+
+  .menu-nav {
+    padding: 15px;
+    #resp-menu-nav{
+      display: none;
+    }
+    .sd-nav{
+    }
+
+    ul {
+      margin: 0;
+      text-align: center;
+      li {
+        display: inline-block;
+        padding:0 10px 0 10px;
+      }
+    }
+  }
+
+  a {
+    color: $add-color;
+    text-decoration: none;
+  }
+  a:hover{
+    color: $add-yellow-color;
+  }
+}
+
+.scroll{
+  background-color: $main-color-trans;
+}

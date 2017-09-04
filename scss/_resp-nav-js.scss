@@ -1,0 +1,62 @@
+@media (max-width: 768px) {
+  .main-menu{
+    .name-out{
+      padding: 5px;
+    }
+    #resp-menu-nav{
+      display: block;
+      text-align: right;
+      .hamburger{
+        display: inline-block;
+        border: 1px solid $add-color;
+        border-radius: 15%;
+        cursor: pointer;
+        text-align: center;
+        .ham{
+          margin: 6px;
+          height: 1px;
+          width: 20px;
+          background-color: white;
+          transition: .8s;
+        }
+        .ham:hover{
+          background-color: $add-yellow-color;
+        }
+      }
+      .hamburger:hover{
+        border-color: $add-yellow-color;
+      }
+      .change {
+        .ham1{
+            transform: rotate(-45deg) translate(-5px, 5px);
+        }
+        .ham2{
+            opacity: 0;
+        }
+        .ham3{
+            transform: rotate(45deg) translate(-5px, -5px);
+        }
+      }
+    }
+    .menu-nav{
+      #resp-menu-nav{
+        display: block;
+      }
+      .sd-nav2 {
+      display: none;
+        z-index: 1;
+        text-align: right;
+        overflow-y: hidden;
+        li {
+    		display: block;
+        margin: 6px 0;
+    		clear: both;
+    	  }
+      }
+    }
+
+  #resp-menu-nav:checked + ul {
+		display: block;
+	}
+  }
+}
