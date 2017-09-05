@@ -2,7 +2,7 @@
 //@media (max-width: 768px) {
 #portfolio{
   color: $add-blue-color;
-
+  background-color: $add-color-trans;
 
   #portfolio-main{
   position: relative;
@@ -66,13 +66,13 @@
         }
       }
       #portfolio-item1{
-        background-image: url(../img/tenis.png);
+        background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/tenis.png);
       }
       #portfolio-item2{
-        background-image: url(../img/arkanoid.png);
+        background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/arkanoid.png);
       }
       #portfolio-item3{
-        background-image: url(../img/kociolek.png);
+        background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/kociolek.png);
       }
     }
     .slider-arrows{

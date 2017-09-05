@@ -1,21 +1,17 @@
 @import "variables";
 
 #about{
+  background-color: $add-color-trans;
   overflow: auto;
   color: $add-blue-color;
   #about-header{
   }
   #about-main{
     #about-picture-box{
-      //display: inline-block;
       width: 50%;
-      //height: 370px;
       float: left;
       margin: 0;
-      //background-color: grey;
-      //border-right: solid 1px $main-color;
       #about-picture{
-        // background-image: url(../img/kamil.jpg);
         max-width: 90%;
         max-height: 350px;
         box-shadow: 0px 0px 23px 6px rgba(0,0,0,0.75);
@@ -30,6 +26,27 @@
       padding-left: 10px;
       border-left: solid 1px $main-color;
       min-height: 350px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  #about{
+    text-align: center;
+    #about-main{
+
+      #about-picture-box{
+        float: inherit;
+        text-align: center;
+        display: inline;
+      }
+      #about-text{
+        float: none;
+        display: inline;
+        text-align: left;
+        p{
+          // text-align: center;
+        }
+      }
     }
   }
 }

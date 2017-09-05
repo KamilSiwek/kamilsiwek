@@ -3,7 +3,11 @@
 
 body {
   font-family: 'Ubuntu', sans-serif;
-  background-color: #eeece1;
+  background-image: url(../img/forrest.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   margin: 0; }
   body .second-word {
     color: #e8de54; }
@@ -138,6 +142,7 @@ body {
       color: white; }
 
 #about {
+  background-color: rgba(238, 236, 225, 0.6);
   overflow: auto;
   color: #2f506b; }
   #about #about-main #about-picture-box {
@@ -156,6 +161,18 @@ body {
     padding-left: 10px;
     border-left: solid 1px #213b50;
     min-height: 350px; }
+
+@media (max-width: 768px) {
+  #about {
+    text-align: center; }
+    #about #about-main #about-picture-box {
+      float: inherit;
+      text-align: center;
+      display: inline; }
+    #about #about-main #about-text {
+      float: none;
+      display: inline;
+      text-align: left; } }
 
 #skills {
   padding-top: 40px;
@@ -187,7 +204,8 @@ body {
     display: none; }
 
 #portfolio {
-  color: #2f506b; }
+  color: #2f506b;
+  background-color: rgba(238, 236, 225, 0.6); }
   #portfolio #portfolio-main {
     position: relative;
     height: 600px;
@@ -236,11 +254,11 @@ body {
           width: 100%;
           min-height: 100%; }
       #portfolio #portfolio-main #carousel #portfolio-item1 {
-        background-image: url(../img/tenis.png); }
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/tenis.png); }
       #portfolio #portfolio-main #carousel #portfolio-item2 {
-        background-image: url(../img/arkanoid.png); }
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/arkanoid.png); }
       #portfolio #portfolio-main #carousel #portfolio-item3 {
-        background-image: url(../img/kociolek.png); }
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/kociolek.png); }
     #portfolio #portfolio-main .slider-arrows .prev-slide {
       position: absolute;
       left: 0;

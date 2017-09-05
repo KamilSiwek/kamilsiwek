@@ -8,7 +8,12 @@
 body {
 
   font-family: 'Ubuntu', sans-serif;
-  background-color: $add-color;
+  background-image: url(../img/forrest.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  //background-color: $add-color;
   margin: 0;
   .second-word{
     color: $add-yellow-color;
